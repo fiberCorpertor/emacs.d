@@ -17,4 +17,16 @@
   (set-selection-coding-system (if (eq system-type 'windows-nt) 'utf-16-le 'utf-8))
   (prefer-coding-system 'utf-8))
 
+(global-set-key "\C-x\C-m" 'execute-extended-command)
+(global-set-key "\C-c\C-m" 'execute-extended-command)
+(global-set-key "\C-w" 'backward-kill-word)
+(global-set-key "\C-x\C-k" 'kill-region)
+(global-set-key "\C-c\C-k" 'kill-region)
+(global-set-key "\C-h" 'delete-backward-char)
+
+(setq tabl-width 4)
+(setq c-basic-offset 4)
+(setq desktop-save-mode 0)
+(setq desktop-restore-frames nil)
+
 (provide 'init-locales)
